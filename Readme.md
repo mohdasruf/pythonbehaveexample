@@ -11,6 +11,9 @@ pip install -r requirements.txt
 #To run bdds
 behave
 
+#To run it locally update the config.ini with your S3 bucket details
+update the details in utils/configcreator.py and run
+python utils/configcreator.py
 
 # policies update in AWS
 Created a inline policy for the codepipeline to access S3

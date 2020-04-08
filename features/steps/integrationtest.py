@@ -28,5 +28,5 @@ def step_impl(context):
     context.bucket_name = filedetails["bucketname"]
     context.s3_file_path = filedetails["s3_file_path"]
     context.save_as = filedetails["save_as"]
-    context.s3.download_file(context.bucket_name, context.s3_file_path, context.save_as)
+    # context.s3.download_file(context.bucket_name, context.s3_file_path, context.save_as)
     print('Successfully placed it in the folder')

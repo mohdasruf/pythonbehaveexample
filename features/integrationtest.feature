@@ -2,7 +2,7 @@
 Feature: Sample integration test
   # Enter feature description here
 
-  Scenario: End to end test
-    Given I download the file and place it in the test files folder
+  Scenario: Download input file from S3 and trigger a python script
+    Given I download the input file from S3 and place it in the test files folder
     And trigger the python script
-    Then the python output is as expected
+    Then the output is as expected

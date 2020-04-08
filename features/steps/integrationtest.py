@@ -15,9 +15,7 @@ def step_impl(context):
 
 @then("the python output is as expected")
 def step_impl(context):
-    print('Successfully verified the output')
-    print('successfully verified the output', context.successread)
-
+    assert (context.successread == ['Test File'])
 
 @given("I download the file and place it in the test files folder")
 def step_impl(context):

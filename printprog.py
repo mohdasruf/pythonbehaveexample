@@ -1,4 +1,5 @@
 def printfile(fileloc):
-    with open(fileloc) as f:
+    with open(fileloc,"r") as f:
+        data = f.readlines()
         print(f.read())
-        return 100
+        return data

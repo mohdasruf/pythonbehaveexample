@@ -29,3 +29,15 @@ def step_impl(context):
 @then("the output is as expected")
 def step_impl(context):
     assert (context.output == ['Test File'])
+
+
+@step('read the input "(?P<input>.+)"')
+def step_impl(context, input):
+    context.input = input
+    print('input is ', input)
+
+
+@then('the output is as expected "(?P<output>.+)"')
+def step_impl(context, output):
+    assert (output == context.input)
+    print('output is ', output)

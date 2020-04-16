@@ -10,4 +10,5 @@ phases:
       - echo Entered the post_build phase...
       - pip install --upgrade pip
       - pip install -r requirements.txt
-      - behave --tags=-ENV1
+      - behave --tags=ENV1
+      - behave --tags=ENV2

@@ -10,6 +10,7 @@ phases:
       - echo Entered the post_build phase...
       - pip install --upgrade pip
       - pip install -r requirements.txt
+      - pip install pytest-xdist
       - behave --tags=ENV1
 #      - behave --tags=ENV1 -f allure_behave.formatter:AllureFormatter -o %allure_result_folder% ./features
 #      - Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')

@@ -1,12 +1,12 @@
 # Created by User at 07/04/2020
 Feature: Sample integration test Demo
 
-  @ENV1
   Scenario: Download input file from S3 and trigger a python script
     Given I download the input file from S3 and place it in the test files folder
     And trigger the python script
     Then the output is as expected
 
+  @ENV
   Scenario Outline: Example scenario for tagging
     Given I download the input file from S3 and place it in the test files folder
     And read the input "<input>"

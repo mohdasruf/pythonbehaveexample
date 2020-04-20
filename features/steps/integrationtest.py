@@ -2,7 +2,7 @@ from behave import *
 import boto3
 from configparser import ConfigParser
 
-from printprog import printfile
+from pythonscript.printprog import printfile
 
 use_step_matcher("re")
 
